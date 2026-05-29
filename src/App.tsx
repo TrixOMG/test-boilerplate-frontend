@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { PostList } from "./components/PostList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+      <header className='app-header'>
+        <h1>📝 Test Boilerplate - Blog Platform</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Test your backend API with this simple interface
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main className='app-main'>
+        <PostList />
+      </main>
+      <footer className='app-footer'>
+        <p>API Endpoint: http://localhost:3000/</p>
+        <p>Swagger Docs: http://localhost:3000/docs</p>
+      </footer>
     </div>
   );
 }
